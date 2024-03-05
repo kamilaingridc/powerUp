@@ -18,7 +18,7 @@ pyautogui.press("enter")
 time.sleep(3)
 
 # fazer login 
-pyautogui.click(x=2076, y=412)
+pyautogui.click(x=-1196, y=373) # VARIA DE PC P/ PC
 pyautogui.write("pythonimpressionador@gmail.com")
 
 # escrever a senha
@@ -26,7 +26,7 @@ pyautogui.press("tab")
 pyautogui.write("sua senha aqui")
  
 # logar
-pyautogui.click(x=2329, y=575)
+pyautogui.click(x=-967, y=533) # VARIA DE PC P/ PC
 time.sleep(3)
 
 # importar base de dados 
@@ -39,8 +39,8 @@ print(tabela)
 for linha in tabela.index:
     
     # clicar no primeiro campo 
-    pyautogui.click('coordenadas')
-
+    pyautogui.click(x=-1235, y=256) # VARIA DE PC P/ PC
+    
     # code
     codigo = tabela.loc[linha, "codigo"]
     pyautogui.write(codigo)
